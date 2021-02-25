@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+$brownOrange: #ab842a !important;
+$titlFont: 'Cormorant',serif;
+body{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+
+.no-top{
+    top: 0px!important;
+}
+
+.title{
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.title-font{
+    font-family: $titlFont;
+}
+
+.text-orange-brown{
+    color: #ab842a !important;
+}
+
+.underline{
+    width: 50px;
+    border-bottom: 1px solid $brownOrange;
+    display: inline-block;
+}
+
+.border-white{
+    border-bottom: 1px solid #fff!important;
+}
+
+.text-title-lg{
+    font-size: 1.1em;
+}
+
+.card{
+    border-radius: 0px!important;
+}
+
+.navbar{
+    z-index: 5;
+    background-color: transparent!important;
+    .dropdown{
+        &-submenu {
+            position: relative;
+            a{
+                &::after{
+                    transform: rotate(-90deg);
+                    position: absolute;
+                    right: 6px;
+                    top: .8em;
+                }
+            }
+            .dropdown-menu{
+                top: 0;
+                left: 100%;
+                margin-left: .1rem;
+                margin-right: .1rem;
+            }
+        }
+    }
+    .navbar-nav{
+        .nav-link{
+            color: #fff;
+            a{
+                color: #fff;
+            }
+        }
+        .active{
+            a{
+                color: #ab842a !important;
+            }
+        }
+    }
+    a{
+        .fas{
+            font-size: 12px;
+            font-weight: 300px;
+        }
+    }
+    .btn-cta{
+        background-color: #234467;
+        border-radius: 0px;
+    }
+    .btn-cta:before{
+        background: #ab842a !important;
+    }
+}
+
+header.fixed-nav{
+    width: 100%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+    background-color: #000!important;
+    box-shadow: 5px -1px 12px -5px grey;
+    z-index: 10;
+}
+
+
+
+#main{
+    section{
+        position: relative;
+    }
+    .hero{
+        min-height: 80vh;
+        position: relative;
+        top: -70px;
+        z-index: -1;
+        background: url('../img/hero-img.jpg') no-repeat;
+        background-size: cover;
+        .container{
+            .hero-text-block{
+                .subtitle{
+                    .underline{
+                        width: 30px;
+                        border-bottom: 1px solid $brownOrange;
+                    }
+                }
+                .title{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .hero::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #020d26;
+        opacity: 0.8;
+    }
+    .hero-text-block{
+        min-height: 70vh;
+        position: relative;
+        z-index: 5;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .container{
+            .subtitle{
+                color: $brownOrange;
+                text-transform: uppercase;
+                font-weight: 500;
+                span.underline{
+                    display: inline-block;
+                    width: 50px!important;
+                    border-bottom: 1px solid $brownOrange;
+                }
+            }
+            .title{
+                color: #fff;
+                font-family: $titlFont;
+            }
+        }
+    }
+
+    #facilities-and-services{
+        background-color: #FBF3E9;
+        margin-top: -80px;
+        .container{            
+            .row{
+                .service-card{
+                    text-align: center;
+                    box-sizing: border-box !important;
+                    h4{
+                        color: #234467;
+                    }
+                    .service-icon::before{
+                        font-size: 5em;
+                    }
+                    a{
+                        text-decoration: none;
+                    }
+                }
+                .service-card:hover{
+                    background-color: #fff;
+                    h4{
+                        color: #fff;
+                    }
+                }
+                .service-card::before{
+                    background-color: #234467;
+                }
+            }
+        }
+    }
+
+    #amenities-we-offer{
+        min-height: 80vh;
+        background: url('../img/amenities-bg.jpg') no-repeat;
+        background-size: cover;        
+    }
+    #amenities-we-offer::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #020d26;
+        opacity: 0.8;
+    }
+    .amenities-card{
+        .amenities-icon::before{
+            font-size: 5em;
+        }
+        .icon-container{
+            position: relative;
+            height: 100px;
+            .amenities-icon{
+                position: absolute;
+                right: 10px;
+                color: #dcbe77;
+            }
+        }
+    }
+    .amenities-card:nth-child(odd){
+        background-color: #ab842a;
+        color: #fff;
+        transition: 0.3s ease-in-out;
+    }
+    .amenities-card:nth-child(odd):hover{
+        background-color: #fff;
+        color: #000;
+    }
+
+    #efficiency-energy{
+        position: relative;
+        .icon-container{    
+            height: 80px;            
+            .efficiency-icon::before{
+                font-size: 5em;
+            }
+        }
+        
+        .efficiency-icon{
+            position: absolute;
+            right: -5px;
+            bottom: -20px;
+            color: #f2f2f2;
+        }
+    }
+
+}
