@@ -87,6 +87,7 @@ body{
     .btn-cta{
         background-color: #234467;
         border-radius: 0px;
+        
         &:before{
             background: #ab842a !important;
         }
@@ -175,7 +176,18 @@ header.fixed-nav{
                 .service-card{
                     text-align: center;
                     box-sizing: border-box !important;
-                    h4{
+
+                    background-image: linear-gradient(to left,
+                            transparent,
+                            transparent 50%,
+                            #234467 50%,
+                            #234467);
+                    background-position: 100% 0;
+                    background-size: 200% 100%;
+                    transition: all 0.8s ease-in-out;
+                    
+                    border: none;
+                    h5{
                         color: #234467;
                     }
                     .service-icon::before{
@@ -184,15 +196,16 @@ header.fixed-nav{
                     a{
                         text-decoration: none;
                     }
-                }
-                .service-card:hover{
-                    background-color: #fff;
-                    h4{
+                    &:hover{
+                        background-position: 0 0;
                         color: #fff;
+                        h5{
+                            color: #fff;
+                        }
                     }
-                }
-                .service-card::before{
-                    background-color: #234467;
+                    &::before{
+                        background-color: #234467;
+                    }
                 }
             }
         }
@@ -214,7 +227,36 @@ header.fixed-nav{
             opacity: 0.8;
         }      
     }
+    .amenities-box:nth-child(odd) .amenities-card{
+        background-color: #fff;
+        color: #777;
+
+        background-image: linear-gradient(to left,
+                            transparent,
+                            transparent 50%,
+                            #ab842a 50%,
+                            #ab842a);
+        background-position: 100% 0;
+        background-size: 200% 100%;
+        transition: all 0.8s ease-in-out;
+
+        border: none;
+        h4{
+            color: #000;
+        }
+
+        &:hover{
+            background-position: 0 0;
+            color: #fff;
+            h4{
+                color: #fff;
+            }
+        }
+    }
     .amenities-card{
+        background-color: #ab842a;
+        color: #fff;
+        transition: 0.3s ease-in-out;
         .amenities-icon::before{
             font-size: 5em;
         }
@@ -227,12 +269,7 @@ header.fixed-nav{
                 color: #dcbe77;
             }
         }
-        &:nth-child(odd){
-            background-color: #ab842a;
-            color: #fff;
-            transition: 0.3s ease-in-out;
-        }
-        &:nth-child(odd):hover{
+        &:hover{
             background-color: #fff;
             color: #000;
         }
@@ -250,7 +287,14 @@ header.fixed-nav{
             position: absolute;
             right: -5px;
             bottom: -20px;
-            color: #f2f2f2;
+            color: #eee;
+        }
+        .card{
+            &:hover{
+                h3{
+                    color: #ab842a;
+                }
+            }
         }
     }
 
@@ -261,19 +305,17 @@ header.fixed-nav{
             position: relative;
             top: 5px;
         }
-        .input-group{
-            input{
-                padding: 15px;
-                border-radius: 0px;
-            }
-            button{
-                border-radius: 0px;
-                padding-left: 25px;
-                padding-right: 25px;
-                background-color: $brownOrange;
-                color: #fff;
-            }
+        input{
+            padding: 15px;
+            border-radius: 0px;
         }
+        button{
+            border-radius: 0px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: $brownOrange;
+            color: #fff;
+        }        
     }
 
 }
@@ -411,10 +453,63 @@ footer{
     bottom: 10px;
     right: 10px;
     .btt-container{
+
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 34px;
         color: #fff;
+    }
+}
+
+@media (max-width: 576px) { 
+    .navbar{
+        background-color: #db8c23!important;
+        .navbar-toggler{    
+            border: none;
+        }
+        .navbar-toggler-icon{
+            background-image: url('/assets/img/hamburger-smartphone.svg');
+            color: #fff;
+        }
+
+        .navbar-nav{
+            li{
+
+            }
+            .active a{
+                color: #fff!important;
+                font-weight: bold;
+            }
+        }
+        .btn-cta{
+            width: 100%;
+        }
+    }
+
+    #amenities-we-offer{
+        h1{
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+    }
+
+    #main-footer{
+        .title-font{
+            font-size: 1.5em;
+        }
+        .contact-value{
+            display: block;
+        }
+        .footer-gallery{
+            img{
+                width: 100%;
+            }
+            ul li{
+                flex: 0 0 50%;
+                max-width: 50%;
+
+            }
+        }
     }
 }

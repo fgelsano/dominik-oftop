@@ -23,3 +23,7 @@ window.onscroll = () => {
         navbar.classList.remove('fixed-nav');
     }
 };
+
+if(window.innerWidth < 577){
+    document.getElementById('site-logo').src = '/assets/img/logo-dark.png';
+}

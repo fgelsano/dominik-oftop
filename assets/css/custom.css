@@ -175,9 +175,16 @@ header.fixed-nav {
   text-align: center;
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
+  background-image: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(50%, transparent), color-stop(50%, #234467), to(#234467));
+  background-image: linear-gradient(to left, transparent, transparent 50%, #234467 50%, #234467);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  border: none;
 }
 
-#main #facilities-and-services .container .row .service-card h4 {
+#main #facilities-and-services .container .row .service-card h5 {
   color: #234467;
 }
 
@@ -190,10 +197,11 @@ header.fixed-nav {
 }
 
 #main #facilities-and-services .container .row .service-card:hover {
-  background-color: #fff;
+  background-position: 0 0;
+  color: #fff;
 }
 
-#main #facilities-and-services .container .row .service-card:hover h4 {
+#main #facilities-and-services .container .row .service-card:hover h5 {
   color: #fff;
 }
 
@@ -219,6 +227,38 @@ header.fixed-nav {
   opacity: 0.8;
 }
 
+#main .amenities-box:nth-child(odd) .amenities-card {
+  background-color: #fff;
+  color: #777;
+  background-image: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(50%, transparent), color-stop(50%, #ab842a), to(#ab842a));
+  background-image: linear-gradient(to left, transparent, transparent 50%, #ab842a 50%, #ab842a);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  border: none;
+}
+
+#main .amenities-box:nth-child(odd) .amenities-card h4 {
+  color: #000;
+}
+
+#main .amenities-box:nth-child(odd) .amenities-card:hover {
+  background-position: 0 0;
+  color: #fff;
+}
+
+#main .amenities-box:nth-child(odd) .amenities-card:hover h4 {
+  color: #fff;
+}
+
+#main .amenities-card {
+  background-color: #ab842a;
+  color: #fff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
 #main .amenities-card .amenities-icon::before {
   font-size: 5em;
 }
@@ -234,14 +274,7 @@ header.fixed-nav {
   color: #dcbe77;
 }
 
-#main .amenities-card:nth-child(odd) {
-  background-color: #ab842a;
-  color: #fff;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-#main .amenities-card:nth-child(odd):hover {
+#main .amenities-card:hover {
   background-color: #fff;
   color: #000;
 }
@@ -262,7 +295,11 @@ header.fixed-nav {
   position: absolute;
   right: -5px;
   bottom: -20px;
-  color: #f2f2f2;
+  color: #eee;
+}
+
+#main #efficiency-energy .card:hover h3 {
+  color: #ab842a;
 }
 
 #main #newsletter {
@@ -275,15 +312,15 @@ header.fixed-nav {
   top: 5px;
 }
 
-#main #newsletter .input-group input {
+#main #newsletter input {
   padding: 15px;
   border-radius: 0px;
 }
 
-#main #newsletter .input-group button {
+#main #newsletter button {
   border-radius: 0px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: #ab842a !important;
   color: #fff;
 }
@@ -473,5 +510,44 @@ footer #lower-footer a:hover {
           align-items: center;
   font-size: 34px;
   color: #fff;
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    background-color: #db8c23 !important;
+  }
+  .navbar .navbar-toggler {
+    border: none;
+  }
+  .navbar .navbar-toggler-icon {
+    background-image: url("/assets/img/hamburger-smartphone.svg");
+    color: #fff;
+  }
+  .navbar .navbar-nav .active a {
+    color: #fff !important;
+    font-weight: bold;
+  }
+  .navbar .btn-cta {
+    width: 100%;
+  }
+  #amenities-we-offer h1 {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+  }
+  #main-footer .title-font {
+    font-size: 1.5em;
+  }
+  #main-footer .contact-value {
+    display: block;
+  }
+  #main-footer .footer-gallery img {
+    width: 100%;
+  }
+  #main-footer .footer-gallery ul li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 /*# sourceMappingURL=custom.css.map */

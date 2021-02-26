@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/flaticon/flaticon.css">
     
     <script src="https://kit.fontawesome.com/47f83b99b5.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
     <link rel="stylesheet" href="assets/css/custom.css">
 </head>
@@ -20,7 +21,7 @@
         <div class="container px-0">
             <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-nav">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/img/logo.png" alt="Logo" width="75%">
+                    <img src="assets/img/logo.png" alt="Logo" width="75%" id="site-logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -132,7 +133,7 @@
                 </div>    
                 <div class="row my-5">
                     <div class="col-md-3 col-sm-6 col-12 my-3">
-                        <div class="card service-card p-3 hvr-sweep-to-right">
+                        <div class="card service-card p-3">
                             <i class="flaticon-bankrupt service-icon"></i>
                             <h5 class="title-font font-weight-bold">Property Management</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum doloremque sint ut quas eligendi? Dicta tempora impedit totam quam aperiam.</p>
@@ -142,7 +143,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-12 my-3">
-                        <div class="card service-card p-3 hvr-sweep-to-right">
+                        <div class="card service-card p-3">
                             <i class="flaticon-value service-icon"></i>
                             <h5 class="title-font font-weight-bold">Commercial Development</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum doloremque sint ut quas eligendi? Dicta tempora impedit totam quam aperiam.</p>
@@ -152,7 +153,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-12 my-3">
-                        <div class="card service-card p-3 hvr-sweep-to-right">
+                        <div class="card service-card p-3">
                             <i class="flaticon-bankrupt service-icon"></i>
                             <h5 class="title-font font-weight-bold">Construction Management</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum doloremque sint ut quas eligendi? Dicta tempora impedit totam quam aperiam.</p>
@@ -162,7 +163,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-12 my-3">
-                        <div class="card service-card p-3 hvr-sweep-to-right">
+                        <div class="card service-card p-3">
                             <i class="flaticon-value service-icon"></i>
                             <h5 class="title-font font-weight-bold">Residential Development</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum doloremque sint ut quas eligendi? Dicta tempora impedit totam quam aperiam.</p>
@@ -187,7 +188,7 @@
                                 <h1 class="title-font text-title-lg"><strong>Amenities We Offer</strong><br><em>Oftop Is Special!</em></h1>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-12">
+                        <div class="col-md-3 col-sm-6 col-12 amenities-box">
                             <div class="card amenities-card p-3 mx-1 mb-4">
                                 <h4 class="title-font">Comfortable Flat</h4>
                                 <p class="m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est consectetur saepe porro quo numquam? Velit!</p>
@@ -196,8 +197,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-12">
-                            <div class="card amenities-card p-3 mx-1 mb-4">
+                        <div class="col-md-3 col-sm-6 col-12 amenities-box">
+                            <div class="card amenities-card p-3 mx-1 mb-4 active">
                                 <h4 class="title-font">Sophisticated Door</h4>
                                 <p class="m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est consectetur saepe porro quo numquam? Velit!</p>
                                 <div class="icon-container">
@@ -205,7 +206,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-12">
+                        <div class="col-md-3 col-sm-6 col-12 amenities-box">
                             <div class="card amenities-card p-3 mx-1 mb-4">
                                 <h4 class="title-font">Private Security</h4>
                                 <p class="m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est consectetur saepe porro quo numquam? Velit!</p>
@@ -214,8 +215,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-12">
-                            <div class="card amenities-card p-3 mx-1 mb-4">
+                        <div class="col-md-3 col-sm-6 col-12 amenities-box">
+                            <div class="card amenities-card p-3 mx-1 mb-4 active">
                                 <h4 class="title-font">Parking Space</h4>
                                 <p class="m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est consectetur saepe porro quo numquam? Velit!</p>
                                 <div class="icon-container">
@@ -223,7 +224,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-12">
+                        <div class="col-md-3 col-sm-6 col-12 amenities-box">
                             <div class="card amenities-card p-3 mx-1 mb-4">
                                 <h4 class="title-font">Fitness Center</h4>
                                 <p class="m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est consectetur saepe porro quo numquam? Velit!</p>
@@ -232,8 +233,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-12">
-                            <div class="card amenities-card p-3 mx-1 mb-4">
+                        <div class="col-md-3 col-sm-6 col-12 amenities-box">
+                            <div class="card amenities-card p-3 mx-1 mb-4 active">
                                 <h4 class="title-font">Good Location</h4>
                                 <p class="m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est consectetur saepe porro quo numquam? Velit!</p>
                                 <div class="icon-container">
@@ -248,7 +249,7 @@
         <section id="efficiency-energy" class="py-5">
             <div class="container my-5">
                 <div class="row">
-                    <div class="col-md-4 col-sm-6 col-12">
+                    <div class="col-md-4 col-sm-6 col-12 mb-3">
                         <div class="card px-4 pt-4 pb-0">
                             <div class="subtitle text-uppercase text-orange-brown">
                                 <div class="underline"></div>
@@ -263,7 +264,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-12">
+                    <div class="col-md-4 col-sm-6 col-12 mb-3">
                         <div class="card px-4 pt-4 pb-0">
                             <div class="subtitle text-uppercase text-orange-brown">
                                 <div class="underline"></div>
@@ -278,7 +279,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-12">
+                    <div class="col-md-4 col-sm-6 col-12 mb-3">
                         <div class="card px-4 pt-4 pb-0">
                             <div class="subtitle text-uppercase text-orange-brown">
                                 <div class="underline"></div>
@@ -301,18 +302,26 @@
                 <div class="row my-5">
                     <div class="col-md-7 col-sm-7 col-12 font-weight-bold">
                         <h1 class="title-font">
-                            <i class="flaticon-email newsletter-icon mr-2"></i>
-                            Join Our Weekly
-                            <span class="text-orange-brown">
-                                <em>Newsletter</em></em>
-                            </span>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 col-12 text-center">
+                                    <i class="flaticon-email newsletter-icon mr-2"></i>
+                                </div>
+                                <div class="col-10 col-sm-10 col-12 text-center text-md-left">
+                                    Join Our Weekly
+                                    <span class="text-orange-brown">
+                                        <em>Newsletter</em></em>
+                                    </span>
+                                </div>
+                            </div>
                         </h1>
                     </div>
                     <div class="col-md-5 col-sm-5 col-12">
-                        <div class="input-group mb-3">
-                            <input type="email" class="form-control" placeholder="Your Email*" required>
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button">
+                        <div class="row px-3">
+                            <div class="col-md-8 col-sm-8 col-12 px-0">
+                                <input type="email" class="form-control" placeholder="Your Email*" required>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-12 px-0">
+                                <button class="btn btn-outline-secondary btn-block px-3" type="button">
                                     Subscribe
                                     <i class="fas fa-arrow-right ml-1"></i>
                                 </button>
@@ -328,11 +337,11 @@
             <div class="container py-5">
                 <div class="row my-5">
                     <div class="col-md-3 col-sm-6 col-12">
-                        <div class="footer-logo my-3">
+                        <div class="footer-logo my-3 text-center text-md-left">
                             <img src="assets/img/logo-dark.png" alt="Footer Logo">
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quidem consequuntur impedit, nam amet magni facilis odio deserunt maxime cum?</p>
-                        <ul class="social-media-icons">
+                        <p class="text-center text-md-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quidem consequuntur impedit, nam amet magni facilis odio deserunt maxime cum?</p>
+                        <ul class="social-media-icons text-center text-md-left">
                             <li class="social-icon">
                                 <a href="" class="fb">
                                     <i class="fab fa-facebook-f"></i>
@@ -360,7 +369,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-12 pt-5">
+                    <div class="col-md-3 col-sm-6 col-6 pt-5">
                         <h2 class="title-font text-uppercase">Services</h2>
                         <ul class="quick-links">
                             <li class="quick-links-item">
@@ -390,12 +399,12 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-12 pt-5">
+                    <div class="col-md-3 col-sm-6 col-6 pt-5">
                         <h2 class="title-font text-uppercase">Contact Info</h2>
-                        <p class="mb-1"><strong class="text-white">Monday - Friday: </strong> 9 am to 6 pm</p>
-                        <p class="mb-1"><strong class="text-white">Saturday - Sunday: </strong> 9 am to 2 pm</p>
-                        <p class="mb-1"><strong class="text-white">Phone: </strong> 215-123-4567</p>
-                        <p class="mb-1"><strong class="text-white">Email: </strong> info@oftopinc.com</p>
+                        <p class="mb-1"><strong class="text-white">Monday - Friday: </strong> <span class="contact-value">9 am to 6 pm</span></p>
+                        <p class="mb-1"><strong class="text-white">Saturday - Sunday: </strong> <span class="contact-value">9 am to 2 pm</span></p>
+                        <p class="mb-1"><strong class="text-white">Phone: </strong> <span class="contact-value">215-123-4567</span></p>
+                        <p class="mb-1"><strong class="text-white">Email: </strong> <span class="contact-value">info@oftopinc.com</span></p>
                     </div>
                     <div class="col-md-3 col-sm-6 col-12 pt-5">
                         <h3 class="title-font">Gallery</h3>
@@ -450,6 +459,17 @@
         </div>
     </div>
     
+    <script>
+        $(document).ready(function(){
+            $(".dropdown").hover(function(){
+                var dropdownMenu = $(this).children(".dropdown-menu");
+                if(dropdownMenu.is(":visible")){
+                    dropdownMenu.parent().toggleClass("open");
+                }
+            });
+        }); 
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
