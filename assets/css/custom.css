@@ -264,4 +264,214 @@ header.fixed-nav {
   bottom: -20px;
   color: #f2f2f2;
 }
+
+#main #newsletter {
+  background-color: #FBF3E9;
+}
+
+#main #newsletter .newsletter-icon::before {
+  font-size: 1.1em;
+  position: relative;
+  top: 5px;
+}
+
+#main #newsletter .input-group input {
+  padding: 15px;
+  border-radius: 0px;
+}
+
+#main #newsletter .input-group button {
+  border-radius: 0px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #ab842a !important;
+  color: #fff;
+}
+
+footer #main-footer {
+  background-color: #162C44;
+  color: #aec5df;
+}
+
+footer #main-footer ul.social-media-icons {
+  padding: 0px;
+}
+
+footer #main-footer ul.social-media-icons li.social-icon {
+  text-decoration: none;
+  padding: 0px;
+  list-style: none;
+  display: inline-block;
+  color: #fff;
+}
+
+footer #main-footer ul.social-media-icons li.social-icon a {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+footer #main-footer ul.social-media-icons li.social-icon a.fb i {
+  background-color: #3b5998;
+}
+
+footer #main-footer ul.social-media-icons li.social-icon a.tw i {
+  background-color: #55acee;
+}
+
+footer #main-footer ul.social-media-icons li.social-icon a.ig i {
+  background-color: #3f729b;
+}
+
+footer #main-footer ul.social-media-icons li.social-icon a.pt i {
+  background-color: #ff0000;
+}
+
+footer #main-footer ul.social-media-icons li.social-icon a.yt i {
+  background-color: #c80000;
+}
+
+footer #main-footer ul.social-media-icons li.social-icon i {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+footer #main-footer ul.social-media-icons li.social-icon:hover a {
+  text-decoration: none;
+}
+
+footer #main-footer ul.social-media-icons li.social-icon:hover a > i {
+  background-color: #db8c23;
+  -webkit-animation: tada 1s linear;
+          animation: tada 1s linear;
+}
+
+footer #main-footer ul.quick-links {
+  padding: 0px;
+}
+
+footer #main-footer ul.quick-links li {
+  list-style: none;
+  padding: 0px;
+}
+
+footer #main-footer ul.quick-links a {
+  color: #aec5df;
+  text-decoration: none;
+}
+
+footer #main-footer ul.quick-links a i {
+  font-size: 10px;
+}
+
+footer #main-footer ul.quick-links a:hover {
+  color: #fff;
+}
+
+footer #main-footer ul.footer-gallery {
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0;
+  list-style-type: none;
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-bottom: 0;
+}
+
+footer #main-footer ul.footer-gallery li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+}
+
+footer #main-footer ul.footer-gallery li a {
+  display: block;
+  position: relative;
+}
+
+footer #main-footer ul.footer-gallery li a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+footer #main-footer ul.footer-gallery li a:hover {
+  color: #0a58ca;
+}
+
+footer #main-footer ul.footer-gallery li a:hover::before {
+  opacity: .50;
+  visibility: visible;
+}
+
+footer #lower-footer {
+  background-color: #234467;
+}
+
+footer #lower-footer a {
+  color: #ab842a !important;
+  text-decoration: underline;
+  font-weight: bold;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+footer #lower-footer a:hover {
+  color: #fff !important;
+}
+
+#back-to-top {
+  background-color: #ab842a !important;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+#back-to-top .btt-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 34px;
+  color: #fff;
+}
 /*# sourceMappingURL=custom.css.map */
